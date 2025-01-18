@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Library Demo</title>
+  <style>
+    #cameraContainer {
+      width: 100%;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1>Camera Library Demo</h1>
+  <div id="cameraContainer"></div>
+  <script src="./cameraLibrary.js"></script>
+  <script>
+    // Initialize the camera library
+    const camera = new CameraLibrary('cameraContainer');
+  </script>
+</body>
+</html>
