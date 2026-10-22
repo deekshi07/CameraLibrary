@@ -3,22 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camera Library Demo</title>
+  <title>CameraLibrary.js Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 640px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+
     #cameraContainer {
       width: 100%;
-      height: 400px;
+      height: 440px;
       position: relative;
-      overflow: hidden;
+      background: #020617;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #cameraContainer video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-footer {
+      padding: 16px 20px;
+      background: #1e293b;
+      border-top: 1px solid #334155;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.75rem;
+    }
+
+    .badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #34d399;
     }
   </style>
 </head>
 <body>
-  <h1>Camera Library Demo</h1>
-  <div id="cameraContainer"></div>
+  <header>
+    <h1>CameraLibrary.js</h1>
+    <p class="subtitle">Zero-dependency client-side WebRTC viewfinder & snapshot capture module</p>
+  </header>
+
+  <div class="card">
+    <div id="cameraContainer"></div>
+    <div class="card-footer">
+      <span class="badge">Live WebRTC Stream</span>
+      <span>Click Capture to snap photo</span>
+    </div>
+  </div>
+
   <script src="./cameraLibrary.js"></script>
   <script>
-    // Initialize the camera library
     const camera = new CameraLibrary('cameraContainer');
   </script>
 </body>

@@ -1,13 +1,20 @@
 {
-  "name": "chamera",
+  "name": "camera-library-js",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Lightweight, zero-dependency browser camera component for WebRTC video capture, viewfinder overlays, snapshots, and client-side downloads.",
+  "main": "cameraLibrary.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node CameraLibrary.js"
+    "start": "npx serve ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": [
+    "camera",
+    "webrtc",
+    "getusermedia",
+    "canvas",
+    "snapshot",
+    "javascript",
+    "browser-camera"
+  ],
+  "author": "Deekshith S J <https://github.com/deekshi07>",
+  "license": "MIT"
 }
