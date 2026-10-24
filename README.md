@@ -2,6 +2,7 @@
 
 > Lightweight, zero-dependency browser camera component for WebRTC media streams, viewfinder overlays, instant canvas snapshot capture, and client-side downloads.
 
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20on%20GitHub%20Pages-success?style=for-the-badge&logo=github)](https://deekshi07.github.io/CameraLibrary/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Vanilla JS](https://img.shields.io/badge/Vanilla-JavaScript-f7df1e?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![WebRTC](https://img.shields.io/badge/API-WebRTC%20MediaStream-333333?logo=webrtc)](https://webrtc.org/)
